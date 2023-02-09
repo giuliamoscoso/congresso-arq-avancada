@@ -80,3 +80,42 @@ li {
     height: 55vh;
     width: 35vw;
 }
+
+#programacao {
+    background-image: linear-gradient(rgba(11, 83, 159, 0.676), rgba(121, 159, 199, 0.862), rgba(200, 217, 236, 0.862));
+    color: white;
+}
+
+
+
+.eventos .eventos-item{
+    padding-left: 10%;
+    border-left: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content:  left;  
+}
+
+
+.conteudo-programacao li{
+
+    display: flex;
+    justify-content: center !important;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: column;
+    /*9align-content: center;*/
+    justify-content: left;
+    align-items: flex-start;    
+
+}
+
+
+.data{
+    float: left;
+    padding-right: 50px;
+}
+
+
+
