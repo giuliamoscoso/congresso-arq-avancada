@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#orientacoes{
+
+    color:rgb(25, 66, 154, 0.87);
+}
+
+
+#titulo-form{
+
+    color: rgb(25, 66, 154, 0.87);
+    margin-left: 7% ;
+}
+
+
+fieldset{
+    border: 0;
+}
+
+
+input, select, button{
+
+    border-radius: 5px;
+
+}
+
+body{
+
+    background-image: url("/img/background.jpg");
+    filter:blur(40);
+
+}
+
+main{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+}   

@@ -23,32 +23,34 @@
             </ol>
         </div class="inscricao">
             <div>
-                <h1>Inscrição Palestrante</h1>
+                <h1 id="titulo">Inscrição Palestrante</h1>
                 <p>Para enviar seu artigo por favor preencha as informações abaixo</p>
             </div>
             <div >
                 <form>
 
-                    <fieldset>
-                            <label>Nome</label>
-                            <input type="text" name="nome" id="nome">
-                            <label>Sobrenome</label>
-                            <input type="text" name="sobrenome" id="sobrenome">
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" required>                            
+                        </div>
+                        <div class="campo">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome" required>
+                        </div>
                     </fieldset>
-                    <div>                        
-                        <label>Email</label>
-                        <input type="email" name="email" id="email">
+                    <div class="campo">                        
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
-                    <div>
-                        <label>Universidade</label>
-                        <input type="text" name="universidade" id="universidade">
+                    <div class="campo">
+                        <label for="universidade">Universidade</label>
+                        <input type="text" name="universidade" id="universidade" required>
                     </div>
-                    <div>
-                        <label >Grau de Formação</label>
-                        <label>Grau de Formação</label>                        
-                    </div>
-                    <div>
-                        <select name="grau-formacao" id="grau-formacao">
+                    <div class="campo">
+                        <label for="grau-formacao" >Grau de Formação</label>
+                        <select name="grau-formacao" id="grau-formacao" required>
+                            <option value=""></option>
                             <option value="">Graduando</option>
                             <option value="">Graduação</option>
                             <option value="">Mestrando</option>
@@ -57,13 +59,13 @@
                             <option value="">Doutorado</option>
                         </select>
                     </div>
-                    <div>
-                        <label>Título do artigo</label>
-                        <input type="text" name="titulo-artigo" id="titulo-artigo">
+                    <div class="campo">
+                        <label for="titulo-artigo">Título do artigo</label>
+                        <input type="text" name="titulo-artigo" id="titulo-artigo" required>
                     </div>
-                    <div>
-                        <label>Artigo em PDF</label>
-                        <input type="file" name="arquivo" id="arquivo"> 
+                    <div class="campo">
+                        <label for="arquivo">Artigo em PDF</label>
+                        <input type="file" name="arquivo" id="arquivo" required> 
                     </div>
                     <button type="submit">Inscrever-se</button>
                 </form>
