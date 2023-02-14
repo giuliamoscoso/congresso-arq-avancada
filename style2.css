@@ -1,0 +1,81 @@
+* {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/img/background-blur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    width: 55vw;
+}
+
+h1 {
+    color: rgb(25, 66, 154, 0.87);
+    padding: 0.5em;
+}
+
+li {
+    padding-bottom: 0.3em;
+}
+
+li > a {
+    color: blue;
+    text-decoration: none;
+}
+
+form > div {
+    padding-bottom: 1em;
+}
+
+input,
+select,
+button {
+    border-radius: 5px;
+}
+
+input[type="text"],
+[type="email"],
+[type="date"],
+select {
+    background: white;
+    border: 1px solid gray;
+    color: rgb(25, 66, 154, 0.87);
+    padding: 0.5em;
+}
+
+input[type="file"] {
+    background: white;
+    border: 1px solid gray;
+    color: rgb(25, 66, 154, 0.87);
+    padding: 0.5em;
+}
+
+button {
+    background: rgb(25, 66, 154, 0.87);
+    border: 0;
+    box-shadow: 2px, 2px, 2px rbga(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1.2em;
+    height: 40px;
+    margin-top: 10px;
+    width: 130px;
+}
+
+button:hover {
+    background: rgb(11, 83, 159);
+    cursor: pointer;
+}
