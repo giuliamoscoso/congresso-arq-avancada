@@ -42,10 +42,10 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="pages/inscricao-ouvinte.html">Ouvinte</a>
+                      <a class="dropdown-item" href="inscricao-ouvinte.html">Ouvinte</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="pages/inscricao-palestrante.html">Palestrante</a>
+                      <a class="dropdown-item" href="inscricao-palestrante.html">Palestrante</a>
                     </li>
                   </ul>
                 </li>
@@ -68,28 +68,28 @@
                     <div id="parte1-form">
                         <div>
                             <label for="nome">Nome </label> <br>
-                            <input type="text" name="nome" id="nome">
+                            <input type="text" name="nome" id="nome" required>
                         </div>
                         <div>
                             <label for="sobrenome">Sobrenome </label> <br>
-                            <input type="text" name="sobrenome" id="sobrenome">
+                            <input type="text" name="sobrenome" id="sobrenome" required>
                         </div>
                         <div>
                             <label for="email">E-mail </label> <br>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                     </div>
                     <div id="parte1-form">
                         <div>
                             <label for="CPF">CPF </label> <br>
-                            <input type="number" name="CPF" id="CPF">
+                            <input type="number" name="CPF" id="CPF" required>
                         </div>
                         <div>
                             <label for="matricula">Matrícula</label> <br>
-                            <input type="number" name="matricula" >
+                            <input type="number" name="matricula" required>
                         </div>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" id="submit">Enviar</button>
                 </form>
             </div>
             <div id="div-orientacoes">

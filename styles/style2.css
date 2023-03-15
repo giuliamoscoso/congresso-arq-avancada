@@ -30,7 +30,6 @@ main {
     background-color: #FFFFFF;
     border-radius: 10px;
     width: 80vw;
-    height: 80vh;
     margin: auto;
     margin-top: 16vh;
     text-align: center;
@@ -82,10 +81,11 @@ form div {
     text-align: left;
 }
 input {
-    margin-left: 20px;
+    margin-left: 20px!important;
     width: 25vw;
     height: 7vh;
     font-size: 1.5rem;
+    margin-bottom: 20px!important;
 }
 
 label {
@@ -95,7 +95,7 @@ label {
 }
 
 button {
-    margin-left: 20px;
+    margin-left: 20px!important;
     font-weight: 600;
     background-color: #FFFFFF;
     color: #08448C;
@@ -158,3 +158,34 @@ footer p {
     color: #FFFFFF!important;
     text-align: center;
 }
+
+#body-palestrante {
+    background-color: #08448C;
+}
+
+
+#p {
+    text-align: left!important;
+    line-height: 35px;
+}
+
+#submit {
+    margin-bottom: 20px;
+    
+}
+
+#submit-2 {
+    margin-bottom: 20px;
+    margin-left: -95px!important;
+}
+
+#orientacoes {
+    color: #08448C;
+}
+
+#parte1-form input {
+    font-size: 1.5rem;
+}
+
+
+

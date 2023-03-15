@@ -5,12 +5,153 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style2.css">
-  <title>Inscrição - Ouvinte</title>
+  <link rel="stylesheet" href="../styles/style2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Inscrição - Apresentador</title>
 </head>
 
-<body>
-  <div id="container">
+<body id="body-palestrante">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="../img/EATEC1.png" alt="Logo do Congresso de Arquitetura Avançada de Computadores da UERN"
+                  height="45" class="d-inline-block align-text-top">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="../index.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Localização</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Palestrantes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Programação</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Inscrição
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="inscricao-ouvinte.html">Ouvinte</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="inscricao-palestrante.html">Palestrante</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Apoio</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+    </header>
+
+    <main id="main-palestrante">
+        <h1 id="orientacoes">Inscrições para apresentador</h1>
+        <div id="conteudo-principal">
+            <div>
+                <form>
+                  <div id="parte1-form">
+                      <div>
+                          <label for="nome">Nome </label> <br>
+                          <input type="text" name="nome" id="nome" required>
+                      </div>
+                      <div>
+                          <label for="sobrenome">Sobrenome </label> <br>
+                          <input type="text" name="sobrenome" id="sobrenome" required>
+                      </div>
+                      <div>
+                          <label for="email">E-mail </label> <br>
+                          <input type="email" name="email" id="email" required>
+                      </div>
+                  </div>
+                  <div id="parte1-form" id="parte2-form">
+                      <div>
+                          <label for="CPF">CPF </label> <br>
+                          <input type="number" name="CPF" id="CPF" required>
+                      </div>
+                      <div>
+                          <label for="matricula">Matrícula</label> <br>
+                          <input type="number" name="matricula" required>
+                      </div>
+                      <div>
+                        <label for="titulo-artigo">Título do artigo</label> <br>
+                        <input type="text" name="titulo-artigo" id="titulo-artigo" required>
+                      </div>
+                      <div >
+                        <label for="arquivo">Artigo em PDF</label>
+                        <input type="file" name="arquivo" id="arquivo" required>
+                      </div>
+                  </div>
+                    <button type="submit" id="submit-2">Enviar</button>
+                </form>
+            </div>
+            <div id="div-orientacoes">
+            
+                <h2 id="titulo-form">Orientações</h2>
+                <p id="p">
+                  - Prazo final para submissão dos artigos: 20 de março. <br>
+                  - Os artigos devem ser formatados a partir do <a href="">template disponível</a>, gerado um arquivo PDF e incluído no formulário de inscrição. <br>
+                  - O autor principal que tiver artigo(s) submetido(s) receberá e-mail de confirmação. <br>
+                  - Para dúvidas, acionar +55 84 9186-3801 (whatsapp).
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <p>Desenvolvido por Mateus Vinícius, Giulia Mosocoso, Geórgia Oliveira e Carlos Eduardo.</p>
+    </footer>
+
+    <!-- Modal Localização -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Localização</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <p>Av. Dr. João Medeiros Filho, 3419 - Potengi, Natal - RN, 59122-365</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.712770248761!2d-35.242017585447535!3d-5.754420495829679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3aa43d5915db3%3A0xab80decdad05320b!2sAv.%20Dr.%20Jo%C3%A3o%20Medeiros%20Filho%2C%203419%20-%20Potengi%2C%20Natal%20-%20RN!5e0!3m2!1spt-BR!2sbr!4v1678815674665!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+      </div>
+    </div> 
+
+  <!-- Modal Programação -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Programação</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          Em breve...
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+      </div>
+  </div>
+
+
+  <!-- <main>
     <div>
       <h1 id="titulo-form">Inscrição para apresentação <br> (submissão de artigo)</h1>
       <h2 id="orientacoes">Orientações</h2>
@@ -21,7 +162,7 @@
     </div>
     <form>
       <div>
-        
+    
         <p>Para enviar seu artigo por favor preencha as informações abaixo.</p>
       </div>
       <div>
@@ -54,7 +195,10 @@
       </div>
       <button type="submit">Enviar</button>
     </form>
-  </div>
+  </main> -->
+
+  
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </html>
