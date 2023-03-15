@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #08448C;
+}
+
+.navbar {
+    background-color: #FFFFFF!important;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    color: #08448C!important;
+    cursor: pointer;
+}
+
+nav {
+    margin-right: 10px;
+}
+
+main {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 16vh;
+    text-align: center;
+
+}
+
+#conteudo-principal {
+    display: flex;
+}
+
+main p {
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #08448C;
+    font-size: 1.3rem;
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-weight: 600;
+    list-style: none;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2{
+    color: #08448C;
+}
+
+form div {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+
+}
+
+#parte1-form {
+    text-align: left;
+}
+input {
+    margin-left: 20px;
+    width: 25vw;
+    height: 7vh;
+    font-size: 1.5rem;
+}
+
+label {
+    color: #08448C;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+button {
+    margin-left: 20px;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    color: #08448C;
+    border-color: #08448C;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 25vw;
+    text-decoration: none;
+    padding: 12px 40px;
+    font-size: 16px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+
+button:hover {
+    background-color: #08448C;
+    color: #FFFFFF;
+    border-color: #08448C;
+}
+
+button:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#conteudo-principal p {
+    width: 500px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#titulo-form {
+    color: #FFFFFF;
+}
+
+#div-orientacoes {
+    margin: auto;
+    background-color: #08448C;
+    border-radius: 10px;
+    
+}
+
+a {
+    font-weight: 600;
+    color: #2DA1D7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+footer p {
+    margin-top: 20px;
+    color: #FFFFFF!important;
+    text-align: center;
+}
