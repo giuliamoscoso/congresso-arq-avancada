@@ -17,6 +17,10 @@ body {
     font-size: 1.3rem;
 }
 
+#navbar {
+    background-color: #FFFFFF!important;
+}
+
 .nav-link {
     color: #08448C!important;
     cursor: pointer;
@@ -24,6 +28,7 @@ body {
 
 nav {
     margin-right: 10px;
+    
 }
 
 main {
