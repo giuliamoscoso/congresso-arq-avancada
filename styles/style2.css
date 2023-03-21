@@ -1,44 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 
 * {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #08448C;
+    background-color: #08448c;
 }
 
 .navbar {
-    background-color: #FFFFFF!important;
-    width: 100%;
+    background-color: #ffffff !important;
     font-size: 1.3rem;
+    width: 100%;
 }
 
 #navbar {
-    background-color: #FFFFFF!important;
+    background-color: #ffffff !important;
 }
 
 .nav-link {
-    color: #08448C!important;
+    color: #08448c !important;
     cursor: pointer;
 }
 
 nav {
     margin-right: 10px;
-    
 }
 
 main {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 10px;
-    width: 80vw;
     margin: auto;
     margin-top: 16vh;
     text-align: center;
-
+    width: 80vw;
 }
 
 #conteudo-principal {
@@ -46,13 +43,12 @@ main {
 }
 
 main p {
-    width: 50vw;
+    color: #08448c;
+    font-size: 1.3rem;
     margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: #08448C;
-    font-size: 1.3rem;
-
+    width: 50vw;
 }
 
 ul {
@@ -72,125 +68,121 @@ h1 {
     text-align: center;
 }
 
-h1, h2{
-    color: #08448C;
+h1,
+h2 {
+    color: #08448c;
 }
 
 form div {
-    margin-bottom: 5px;
     font-size: 1.2rem;
-
+    margin-bottom: 5px;
 }
 
 #parte1-form {
     text-align: left;
 }
 input {
-    margin-left: 20px!important;
-    width: 25vw;
-    height: 7vh;
     font-size: 1.5rem;
-    margin-bottom: 20px!important;
+    height: 7vh;
+    margin-bottom: 20px !important;
+    margin-left: 20px !important;
+    width: 25vw;
 }
 
 label {
-    color: #08448C;
-    margin-left: 20px;
+    color: #08448c;
     font-weight: 600;
+    margin-left: 20px;
 }
 
 button {
-    margin-left: 20px!important;
-    font-weight: 600;
-    background-color: #FFFFFF;
-    color: #08448C;
-    border-color: #08448C;
+    background-color: #ffffff;
+    border-color: #08448c;
     border-radius: 5px;
-    padding: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-    width: 25vw;
-    text-decoration: none;
-    padding: 12px 40px;
-    font-size: 16px;
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    color: #08448c;
     cursor: pointer;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px !important;
+    margin-top: 10px;
     outline: none;
+    padding: 5px;
+    padding: 12px 40px;
+    text-decoration: none;
     transition: 0.2s all;
+    width: 25vw;
 }
 
 button:hover {
-    background-color: #08448C;
-    color: #FFFFFF;
-    border-color: #08448C;
+    background-color: #08448c;
+    border-color: #08448c;
+    color: #ffffff;
 }
 
 button:active {
-    transform: scale(0.98);
     /* Scaling button to 0.98 to its original size */
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.98);
 }
 
 #conteudo-principal p {
-    width: 500px;
+    color: #ffffff;
     text-align: center;
-    color: #FFFFFF;
+    width: 500px;
 }
 
 #titulo-form {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 #div-orientacoes {
-    margin: auto;
-    background-color: #08448C;
+    background-color: #08448c;
     border-radius: 10px;
-    
+    margin: auto;
+    padding: 20px;
 }
 
 a {
+    color: #2da1d7;
     font-weight: 600;
-    color: #2DA1D7;
     text-decoration: none;
 }
 
 a:hover {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 footer p {
+    color: #ffffff !important;
     margin-top: 20px;
-    color: #FFFFFF!important;
     text-align: center;
 }
 
 #body-palestrante {
-    background-color: #08448C;
+    background-color: #08448c;
 }
 
-
 #p {
-    text-align: left!important;
     line-height: 35px;
+    text-align: left !important;
 }
 
 #submit {
     margin-bottom: 20px;
-    
 }
 
 #submit-2 {
     margin-bottom: 20px;
-    margin-left: -95px!important;
+    margin-left: -95px !important;
 }
 
 #orientacoes {
-    color: #08448C;
+    color: #08448c;
+    padding-top: 10px;
 }
 
 #parte1-form input {
     font-size: 1.5rem;
 }
-
-
-

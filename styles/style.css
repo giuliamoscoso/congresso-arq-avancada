@@ -1,20 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 
 html,
 body {
+    font-family: "Oswald", sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: #08448c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2da1d7;
 }
 
 .navbar {
-    background-color: #FFFFFF!important;
-    width: 100%;
+    background-color: #ffffff !important;
     font-size: 1.3rem;
+    width: 100%;
 }
 
 .nav-link {
-    color: #08448C!important;
+    color: #08448c !important;
     cursor: pointer;
 }
 
@@ -35,21 +45,21 @@ nav {
     color: white;
 }
 
-#img1 { 
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
+#img1 {
     background-attachment: fixed;
+    background-image: url(../img/background.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 
 #img1 h1 {
     font-size: 3rem;
     font-weight: 600;
-    padding-top: 10%;
     margin-left: 5vw;
-} 
+    padding-top: 10%;
+}
 
 #img1 p {
     font-size: 1.3rem;
@@ -66,31 +76,36 @@ nav {
 }
 
 .titulo-fundo-branco {
-    color: #08448C;
+    color: #08448c;
     margin-left: 5vw;
     margin-top: 5%;
 }
 
 #sobre {
     margin-left: 1.5vw;
-    width: 70vw;
-    margin: auto;
+    width: 90vw;
 }
 
 #sobre .conteudo p {
+    font-size: 1.5vw !important;
     text-align: justify;
-    font-size: 1.5vw!important;
 }
 
 .sobre-h3 {
-    color: #08448C;
+    color: #08448c;
     font-weight: 600;
+    margin-bottom: 0.7rem;
     text-align: left;
 }
 
 .conteudo {
     margin-top: 25px;
     text-align: center;
+}
+
+#topicos {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -104,11 +119,6 @@ li {
     font-weight: 600;
     list-style: none;
     margin: 10px;
-}
-
-#topicos li {
-    color: rgb(11, 83, 159);
-    font-style: italic;
 }
 
 #local {
@@ -174,22 +184,26 @@ li {
 }
 
 .container-fluid {
-    background-color: #FFFFFF!important;
+    background-color: #ffffff !important;
 }
 
 .card {
-    background-color: #08448C;
+    background-color: #08448c;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.136);
     color: white;
-    width: 18vw;
     height: 65vh;
     margin: 0 15px 15px 0;
+    width: 18vw;
 }
 
 .card-img-top {
-    width: 100%!important;
-    height: 50%!important;
+    height: 50% !important;
+    width: 100% !important;
+}
+
+.fonte-titulo {
+    font-weight: bold;
 }
 
 .card-text {
@@ -199,30 +213,31 @@ li {
 }
 
 .card-parceiros {
-    background-color: #08448C;
+    background-color: #08448c;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.136);
     color: white;
-    width: 15vw;
     height: 30vh;
+    width: 15vw;
 }
 
 #fundo-parceiros {
-    width: 80vw;
-    height: 20vh;
-    background-color: #08448C;
-    margin: auto;
-    text-align: center;
-    
-    margin-top: 20px;
+    align-items: center;
+    background-color: #08448c;
     border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+    justify-content: space-evenly;
+    margin: auto;
     margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    width: 80vw;
 }
 
 .img-parceiros {
-    margin-top: 2.5%;
-    border-radius: 20px;
-    margin-right: 5%;
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -251,6 +266,6 @@ li {
 }
 
 footer p {
-    color: #08448C!important;
+    color: #08448c !important;
     text-align: center;
 }
