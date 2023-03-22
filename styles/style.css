@@ -32,6 +32,12 @@ nav {
     margin-right: 10px;
 }
 
+.modal-center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 #foto-principal {
     background-position: center;
     height: 100vh;
@@ -106,6 +112,8 @@ nav {
 #topicos {
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.2rem;
+    justify-content: space-evenly;
 }
 
 ul {

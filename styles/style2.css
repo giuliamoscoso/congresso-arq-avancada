@@ -29,6 +29,12 @@ nav {
     margin-right: 10px;
 }
 
+.modal-center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 main {
     background-color: #ffffff;
     border-radius: 10px;
