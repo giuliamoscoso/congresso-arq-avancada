@@ -168,42 +168,50 @@
     const nome = document.querySelector('#nome').value;
     const sobrenome = document.querySelector('#sobrenome').value;
     const email = document.querySelector('#email').value;
-    const CPF = document.querySelector('#CPF').value;
+    const cpf = document.querySelector('#CPF').value;
     const matricula = document.querySelector('#matricula').value;
 
-    const data = {
-      nome,
-      sobrenome,
-      email,
-      CPF,
-      matricula
-    }
+    axios({
+      method: 'post',
+      url: 'http://127.0.0.1:3000/cadastroOuvinte',
+      data: {
+        nome: nome,
+        sobrenome: sobrenome,
+        email: email,
+        cpf: cpf,
+        matricula: matricula
+      },
+    }).then((response) => {
+      console.log(response);
 
-    axios.post('http://localhost:3000/cadastroOuvinte', data)
-      .then((response) => {
-        console.log(response);
+      Swal.fire(
+        'Inscrição submetida!',
+        'Logo mais você receberá um e-mail confirmando sua inscrição no evento.',
+        'success'
+      )
 
-        Swal.fire(
-          'Inscrição submetida!',
-          'Logo mais você receberá um e-mail confirmando sua inscrição no evento.',
-          'success'
-        )
+      document.querySelector('#nome').value = '';
+      document.querySelector('#sobrenome').value = '';
+      document.querySelector('#email').value = '';
+      document.querySelector('#CPF').value = '';
+      document.querySelector('#matricula').value = '';
+    }).catch((error) => {
+      console.log(error);
 
-        document.querySelector('#nome').value = '';
-        document.querySelector('#sobrenome').value = '';
-        document.querySelector('#email').value = '';
-        document.querySelector('#CPF').value = '';
-        document.querySelector('#matricula').value = '';
-      })
-      .catch((error) => {
-        console.log(error);
-
+      if (error.response.status === 400) {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Ops...',
+          text: 'Você já está inscrito no evento!'
+        });
+      } else {
         Swal.fire({
           icon: 'error',
           title: 'Ops...',
           text: 'Alguma coisa deu errado! Por favor, tente novamente mais tarde ou entre em contato com a organização do evento.'
         });
-      })
+      }
+    });
   });
 </script>
 

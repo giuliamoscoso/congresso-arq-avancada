@@ -82,7 +82,7 @@
             </div>
             <div>
               <label for="matricula">Matrícula</label> <br>
-              <input type="number" name="matricula" required>
+              <input type="number" name="matricula" id="matricula" required>
             </div>
             <div>
               <label for="titulo-artigo">Título do artigo</label> <br>
@@ -164,55 +164,6 @@
       </div>
     </div>
   </div>
-
-
-  <!-- <main>
-    <div>
-      <h1 id="titulo-form">Inscrição para apresentação <br> (submissão de artigo)</h1>
-      <h2 id="orientacoes">Orientações</h2>
-      <p>Prazo final para submissão dos artigos: 20 de março
-        Os artigos devem ser formatados a partir do <a href="">template disponível</a>, gerado um arquivo PDF e incluído no formulário de inscrição.
-        O autor principal que tiver artigo(s) submetido(s) receberá e-mail de confirmação.
-        Para dúvidas, acionar +55 84 9186-3801 (whatsapp)</p>
-    </div>
-    <form>
-      <div>
-    
-        <p>Para enviar seu artigo por favor preencha as informações abaixo.</p>
-      </div>
-      <div>
-        <label for="nome">Nome </label>
-        <input type="text" name="nome" id="nome">
-      </div>
-      <div>
-        <label for="sobrenome">Sobrenome </label>
-        <input type="text" name="sobrenome" id="sobrenome">
-      </div>
-      <div>
-        <label for="email">E-mail </label>
-        <input type="email" name="email" id="email">
-      </div>
-      <div class="campo">
-        <label for="titulo-artigo">CPF</label>
-        <input type="text" name="titulo-artigo" id="titulo-artigo" required>
-      </div>
-      <div class="campo">
-        <label for="titulo-artigo">Matrícula</label>
-        <input type="text" name="titulo-artigo" id="titulo-artigo" required>
-      </div>
-      <div class="campo">
-        <label for="titulo-artigo">Título do artigo</label>
-        <input type="text" name="titulo-artigo" id="titulo-artigo" required>
-      </div>
-      <div class="campo">
-        <label for="arquivo">Artigo em PDF</label>
-        <input type="file" name="arquivo" id="arquivo" required>
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
-  </main> -->
-
-
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -225,7 +176,7 @@
   const nome = document.querySelector('#nome');
   const sobrenome = document.querySelector('#sobrenome');
   const email = document.querySelector('#email');
-  const cpf = document.querySelector('#cpf');
+  const cpf = document.querySelector('#CPF');
   const matricula = document.querySelector('#matricula');
   const tituloArtigo = document.querySelector('#titulo-artigo');
   const arquivo = document.querySelector('#arquivo');
@@ -234,41 +185,88 @@
     e.preventDefault();
 
     const formData = new FormData();
+
     formData.append('nome', nome.value);
     formData.append('sobrenome', sobrenome.value);
     formData.append('email', email.value);
     formData.append('cpf', cpf.value);
     formData.append('matricula', matricula.value);
-    formData.append('titulo-artigo', tituloArtigo.value);
-    formData.append('arquivo', arquivo.files[0]);
+    formData.append('titulo', tituloArtigo.value);
+    formData.append('documento', arquivo.files[0]);
 
-    axios.post('http://localhost:3000/submissaoArtigos', formData)
-      .then((response) => {
-        console.log(response);
+    console.log(formData.values());
 
-        Swal.fire(
-          'Inscrição submetida!',
-          'Logo mais você receberá um e-mail confirmando sua inscrição no evento.',
-          'success'
-        )
+    axios({
+      method: 'post',
+      url: 'http://127.0.0.1:3000/submissaoArtigos',
+      data: formData,
+    }).then((response) => {
+      console.log(response);
 
-        nome.value = '';
-        sobrenome.value = '';
-        email.value = '';
-        cpf.value = '';
-        matricula.value = '';
-        tituloArtigo.value = '';
-        arquivo.value = '';
-      })
-      .catch((error) => {
-        console.log(error);
+      Swal.fire(
+        'Inscrição submetida!',
+        'Logo mais você receberá um e-mail confirmando sua inscrição no evento.',
+        'success'
+      )
 
+      document.querySelector('#nome').value = '';
+      document.querySelector('#sobrenome').value = '';
+      document.querySelector('#email').value = '';
+      document.querySelector('#CPF').value = '';
+      document.querySelector('#matricula').value = '';
+    }).catch((error) => {
+      console.log(error);
+
+      if (error.response.status === 400) {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Ops...',
+          text: 'Você já está inscrito no evento!'
+        });
+      } else {
         Swal.fire({
           icon: 'error',
           title: 'Ops...',
           text: 'Alguma coisa deu errado! Por favor, tente novamente mais tarde ou entre em contato com a organização do evento.'
         });
-      })
+      }
+    });
+
+    // axios.post('http://localhost:3000/submissaoArtigos', formData)
+    //   .then((response) => {
+    //     console.log(response);
+
+    //     Swal.fire(
+    //       'Inscrição submetida!',
+    //       'Logo mais você receberá um e-mail confirmando sua inscrição no evento.',
+    //       'success'
+    //     )
+
+    //     nome.value = '';
+    //     sobrenome.value = '';
+    //     email.value = '';
+    //     cpf.value = '';
+    //     matricula.value = '';
+    //     tituloArtigo.value = '';
+    //     arquivo.value = '';
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+
+    //     if (error.response.status === 400) {
+    //       Swal.fire({
+    //         icon: 'warning',
+    //         title: 'Ops...',
+    //         text: 'Você já está inscrito no evento!'
+    //       });
+    //     } else {
+    //       Swal.fire({
+    //         icon: 'error',
+    //         title: 'Ops...',
+    //         text: 'Alguma coisa deu errado! Por favor, tente novamente mais tarde ou entre em contato com a organização do evento.'
+    //       });
+    //     }
+    //   })
   })
 </script>
 
