@@ -76,13 +76,13 @@
             </div>
             <div>
               <label for="email">E-mail </label> <br>
-              <input type="email" name="email" id="email" required>
+              <input type="email" name="email" id="email" placeholder="exemplo@email.com.br" required>
             </div>
           </div>
           <div id="parte1-form">
             <div>
               <label for="CPF">CPF </label> <br>
-              <input type="number" name="CPF" id="CPF" required>
+              <input type="number" name="CPF" id="CPF" placeholder="000.000.000-00" required>
             </div>
             <div>
               <label for="matricula">Matrícula</label> <br>
@@ -173,7 +173,7 @@
 
     axios({
       method: 'post',
-      url: 'http://127.0.0.1:3000/cadastroOuvinte',
+      url: 'https://eatec.bomdiasupermercado.com.br/cadastroOuvinte',
       data: {
         nome: nome,
         sobrenome: sobrenome,
@@ -182,7 +182,7 @@
         matricula: matricula
       },
     }).then((response) => {
-      console.log(response);
+      // console.log(response);
 
       Swal.fire(
         'Inscrição submetida!',
@@ -196,7 +196,7 @@
       document.querySelector('#CPF').value = '';
       document.querySelector('#matricula').value = '';
     }).catch((error) => {
-      console.log(error);
+      // console.log(error);
 
       if (error.response.status === 400) {
         Swal.fire({
