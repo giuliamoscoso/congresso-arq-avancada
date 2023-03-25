@@ -340,6 +340,12 @@ footer p {
         position: relative;
         top: 50vh;
     }
+    .imagem1 h1 {
+        margin-top: -15%!important;
+    }
+    .imagem1 p {
+        margin-top: -4%!important;
+    }
 }
 
 @media (max-height: 500px) {
