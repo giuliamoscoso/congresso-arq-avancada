@@ -325,7 +325,7 @@ footer p {
     }
 }
 
-@media (max-width: 362px) {
+@media (max-width: 362px) or (max-height: 530px) {
     #img1 h1 {
         font-size: 2rem;
         font-weight: 600;
