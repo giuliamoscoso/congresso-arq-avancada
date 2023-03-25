@@ -101,7 +101,7 @@ label {
     margin-left: 20px;
 }
 
-button {
+#submit {
     background-color: #ffffff;
     border-color: #08448c;
     border-radius: 5px;
@@ -121,13 +121,13 @@ button {
     width: 25vw;
 }
 
-button:hover {
+#submit:hover {
     background-color: #08448c;
     border-color: #08448c;
     color: #ffffff;
 }
 
-button:active {
+#submit:active {
     /* Scaling button to 0.98 to its original size */
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     transform: scale(0.98);
@@ -191,4 +191,176 @@ footer p {
 
 #parte1-form input {
     font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-top: 10vh;
+        width: 90vw;
+    }
+
+    #div-orientacoes {
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 80vw;
+    }
+
+    #conteudo-principal {
+        flex-direction: column-reverse;
+    }
+
+    #conteudo-principal p {
+        width: 100%;
+    }
+
+    #conteudo-principal img {
+        width: 100%;
+    }
+
+    #parte1-form {
+        text-align: center;
+    }
+
+    input {
+        border: 1px solid gray;
+    }
+
+    #parte1-form input {
+        margin-left: 0 !important;
+    }
+
+    #parte1-form label {
+        margin-left: 0 !important;
+    }
+
+    #parte1-form button {
+        margin-left: 0 !important;
+    }
+
+    #parte1-form input {
+        width: 80vw;
+    }
+
+    #parte1-form button {
+        width: 80vw;
+    }
+
+    #parte1-form {
+        margin-bottom: 20px;
+    }
+
+    #parte2-form {
+        margin-bottom: 20px;
+    }
+
+    #parte2-form input {
+        width: 80vw;
+    }
+
+    #parte2-form button {
+        width: 80vw;
+    }
+
+    #parte2-form {
+        text-align: center;
+    }
+
+    #parte2-form input {
+        margin-left: 0 !important;
+    }
+
+    #parte2-form label {
+        margin-left: 0 !important;
+    }
+
+    #parte2-form button {
+        margin-left: 0 !important;
+    }
+
+    #parte2-form input {
+        width: 80vw;
+    }
+
+    #parte2-form button {
+        width: 80vw;
+    }
+
+    #parte2-form {
+        margin-bottom: 20px;
+    }
+
+    #parte3-form {
+        margin-bottom: 20px;
+    }
+
+    #parte3-form input {
+        width: 80vw;
+    }
+
+    #parte3-form button {
+        width: 80vw;
+    }
+
+    #parte3-form {
+        text-align: center;
+    }
+
+    #parte3-form input {
+        margin-left: 0 !important;
+    }
+
+    #parte3-form label {
+        margin-left: 0 !important;
+    }
+
+    #parte3-form button {
+        margin-left: 0 !important;
+    }
+
+    #parte3-form input {
+        width: 80vw;
+    }
+
+    #parte3-form button {
+        width: 80vw;
+    }
+
+    #submit {
+        background-color: #ffffff;
+        border-color: #08448c;
+        border-radius: 5px;
+        box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+        color: #08448c;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0px 0px 20px 0px !important;
+        outline: none;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.2s all;
+        width: 25vw;
+    }
+
+    #submit-2 {
+        background-color: #ffffff;
+        border-color: #08448c;
+        border-radius: 5px;
+        box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+        color: #08448c;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0px 0px 20px 0px !important;
+        outline: none;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.2s all;
+        width: 25vw;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
 }

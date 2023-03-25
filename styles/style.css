@@ -32,6 +32,11 @@ nav {
     margin-right: 10px;
 }
 
+#navbarTogglerDemo02 ul {
+    margin-left: auto;
+    margin-right: 0px !important;
+}
+
 .modal-center {
     align-items: center;
     display: flex;
@@ -275,4 +280,47 @@ li {
 footer p {
     color: #08448c !important;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    #img1 {
+        background-attachment: scroll;
+        background-image: url(../img/background.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    #img1 h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-left: 5vw;
+        position: relative;
+        top: 60vh;
+    }
+    #img1 p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-left: 5vw;
+        position: relative;
+        top: 60vh;
+    }
+    #sobre {
+        font-size: 1.2rem;
+        margin: auto !important;
+        width: auto !important;
+    }
+    #fundo-parceiros {
+        flex-direction: row;
+        height: 400px;
+        width: 90vw;
+    }
+    .card {
+        width: 80vw;
+    }
+    footer p {
+        color: #08448c !important;
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }
