@@ -324,3 +324,19 @@ footer p {
         text-align: center;
     }
 }
+
+@media (max-width: 362px) {
+    #img1 h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-left: 5vw;
+        position: relative;
+        top: 60vh;
+    }
+    #img1 p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-left: 5vw;
+        position: relative;
+    }
+}
