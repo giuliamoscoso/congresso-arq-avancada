@@ -331,12 +331,13 @@ footer p {
         font-weight: 600;
         margin-left: 5vw;
         position: relative;
-        top: 60vh;
+        top: 50vh;
     }
     #img1 p {
         font-size: 1.3rem;
         font-weight: 600;
         margin-left: 5vw;
         position: relative;
+        top: 50vh;
     }
 }
