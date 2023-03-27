@@ -295,15 +295,15 @@ footer p {
         font-size: 3rem;
         font-weight: 600;
         margin-left: 5vw;
-        position: relative;
-        top: 60vh;
+        margin-top: 10vw;
+        
     }
     #img1 p {
         font-size: 1.3rem;
         font-weight: 600;
         margin-left: 5vw;
-        position: relative;
-        top: 60vh;
+        
+       
     }
     #sobre {
         font-size: 1.2rem;
@@ -325,7 +325,7 @@ footer p {
     }
 }
 
-@media (max-width: 362px) {
+@media (max-width: 400px) {
     #img1 h1 {
         font-size: 2rem;
         font-weight: 600;
@@ -339,6 +339,10 @@ footer p {
         margin-left: 5vw;
         position: relative;
         top: 50vh;
+    }
+
+    .titulo-fundo-branco {
+        margin-top: 20%!important;
     }
 }
 

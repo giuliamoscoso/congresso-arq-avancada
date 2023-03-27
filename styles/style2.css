@@ -190,8 +190,20 @@ footer p {
 }
 
 #submit-2 {
-    margin-bottom: 20px;
-    margin-left: -95px !important;
+    background-color: #ffffff;
+    border-color: #08448c;
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    color: #08448c;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px 0px 20px -95px !important;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s all;
+    width: 10vw;
 }
 
 #orientacoes {
