@@ -201,9 +201,9 @@
 
       if (error.response.status === 400) {
         Swal.fire({
-          icon: 'warning',
-          title: 'Ops...',
-          text: 'Você já está inscrito no evento!'
+          icon: 'info',
+          title: 'Você já está cadastrado no evento!',
+          html: '<p>Se você deseja cadastrar mais de um artigo, envie-o para o e-mail <a href="mailto:m.bluth@example.com">leonardohugo@alu.uern.br<a/> acompanhado do seu título e CPF do autor.</p>'
         });
       } else {
         Swal.fire({
