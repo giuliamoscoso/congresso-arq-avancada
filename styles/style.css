@@ -37,12 +37,6 @@ nav {
     margin-right: 0px !important;
 }
 
-.modal-center {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
 #foto-principal {
     background-position: center;
     height: 100vh;
@@ -120,17 +114,14 @@ nav {
     justify-content: space-evenly;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
 li {
     font-weight: 600;
     list-style: none;
     margin: 10px;
+}
+
+.item {
+    font-weight: 400;
 }
 
 #local {
@@ -161,29 +152,6 @@ li {
 #programacao {
     background-image: linear-gradient(rgba(25, 66, 154, 0.87), rgba(11, 83, 159, 0.676), rgba(121, 159, 199, 0.862));
     color: white;
-}
-
-.eventos .eventos-item {
-    border-left: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding-left: 10%;
-}
-
-.conteudo-programacao li {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center !important;
-    justify-content: left;
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-.conteudo-programacao ul {
-    justify-content: space-evenly;
 }
 
 .data {
@@ -296,14 +264,11 @@ footer p {
         font-weight: 600;
         margin-left: 5vw;
         margin-top: 10vw;
-        
     }
     #img1 p {
         font-size: 1.3rem;
         font-weight: 600;
         margin-left: 5vw;
-        
-       
     }
     #sobre {
         font-size: 1.2rem;
@@ -342,7 +307,7 @@ footer p {
     }
 
     .titulo-fundo-branco {
-        margin-top: 20%!important;
+        margin-top: 20% !important;
     }
 }
 

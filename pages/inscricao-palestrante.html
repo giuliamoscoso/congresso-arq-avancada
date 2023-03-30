@@ -173,65 +173,75 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
+  // const form = document.querySelector('form');
+  // const nome = document.querySelector('#nome');
+  // const sobrenome = document.querySelector('#sobrenome');
+  // const email = document.querySelector('#email');
+  // const cpf = document.querySelector('#CPF');
+  // const matricula = document.querySelector('#matricula');
+  // const tituloArtigo = document.querySelector('#titulo-artigo');
+  // const arquivo = document.querySelector('#arquivo');
+
+  // form.addEventListener('submit', (e) => {
+  //   e.preventDefault();
+
+  //   const formData = new FormData();
+
+  //   formData.append('nome', nome.value);
+  //   formData.append('sobrenome', sobrenome.value);
+  //   formData.append('email', email.value);
+  //   formData.append('cpf', cpf.value);
+  //   formData.append('matricula', matricula.value);
+  //   formData.append('titulo', tituloArtigo.value);
+  //   formData.append('documento', arquivo.files[0]);
+
+  //   axios({
+  //     method: 'post',
+  //     url: 'https://eatec.bomdiasupermercado.com.br/submissaoArtigos',
+  //     data: formData,
+  //   }).then((response) => {
+  //     // console.log(response);
+
+  //     Swal.fire(
+  //       'Inscrição submetida!',
+  //       'Logo mais você receberá um e-mail confirmando sua inscrição no evento.',
+  //       'success'
+  //     )
+
+  //     document.querySelector('#nome').value = '';
+  //     document.querySelector('#sobrenome').value = '';
+  //     document.querySelector('#email').value = '';
+  //     document.querySelector('#CPF').value = '';
+  //     document.querySelector('#matricula').value = '';
+  //     document.querySelector('#titulo-artigo').value = '';
+  //   }).catch((error) => {
+  //     // console.log(error);
+
+  //     if (error.response.status === 400) {
+  //       Swal.fire({
+  //         icon: 'info',
+  //         title: 'Você já está cadastrado no evento!',
+  //         html: '<p>Se você deseja cadastrar mais de um artigo, envie-o para o e-mail <a href="mailto:m.bluth@example.com">leonardohugo@alu.uern.br<a/> acompanhado do seu título e CPF do autor.</p>'
+  //       });
+  //     } else {
+  //       Swal.fire({
+  //         icon: 'error',
+  //         title: 'Ops...',
+  //         text: 'Alguma coisa deu errado! Por favor, tente novamente mais tarde ou entre em contato com a organização do evento.'
+  //       });
+  //     }
+  //   });
+  // })
+
   const form = document.querySelector('form');
-  const nome = document.querySelector('#nome');
-  const sobrenome = document.querySelector('#sobrenome');
-  const email = document.querySelector('#email');
-  const cpf = document.querySelector('#CPF');
-  const matricula = document.querySelector('#matricula');
-  const tituloArtigo = document.querySelector('#titulo-artigo');
-  const arquivo = document.querySelector('#arquivo');
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-
-    const formData = new FormData();
-
-    formData.append('nome', nome.value);
-    formData.append('sobrenome', sobrenome.value);
-    formData.append('email', email.value);
-    formData.append('cpf', cpf.value);
-    formData.append('matricula', matricula.value);
-    formData.append('titulo', tituloArtigo.value);
-    formData.append('documento', arquivo.files[0]);
-
-    axios({
-      method: 'post',
-      url: 'https://eatec.bomdiasupermercado.com.br/submissaoArtigos',
-      data: formData,
-    }).then((response) => {
-      // console.log(response);
-
-      Swal.fire(
-        'Inscrição submetida!',
-        'Logo mais você receberá um e-mail confirmando sua inscrição no evento.',
-        'success'
-      )
-
-      document.querySelector('#nome').value = '';
-      document.querySelector('#sobrenome').value = '';
-      document.querySelector('#email').value = '';
-      document.querySelector('#CPF').value = '';
-      document.querySelector('#matricula').value = '';
-      document.querySelector('#titulo-artigo').value = '';
-    }).catch((error) => {
-      // console.log(error);
-
-      if (error.response.status === 400) {
-        Swal.fire({
-          icon: 'info',
-          title: 'Você já está cadastrado no evento!',
-          html: '<p>Se você deseja cadastrar mais de um artigo, envie-o para o e-mail <a href="mailto:m.bluth@example.com">leonardohugo@alu.uern.br<a/> acompanhado do seu título e CPF do autor.</p>'
-        });
-      } else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Ops...',
-          text: 'Alguma coisa deu errado! Por favor, tente novamente mais tarde ou entre em contato com a organização do evento.'
-        });
-      }
+    Swal.fire({
+      icon: 'error',
+      title: 'Prazo de submissão de artigos encerrado!'
     });
-  })
+  });
 </script>
 
 </html>
